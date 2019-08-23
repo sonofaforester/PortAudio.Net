@@ -32,7 +32,10 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: 'PortAudio.Net/*.csproj'
-    versioningScheme: 'byBuildNumber'
+    versioningScheme: 'byPrereleaseNumber'
+    majorVersion: '0'
+    minorVersion: '1'
+    patchVersion: '0'
     includeSymbols: true
 
 - task: NuGetCommand@2
